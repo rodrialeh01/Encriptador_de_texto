@@ -1,0 +1,66 @@
+body{
+    background: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+header h1 {
+    text-align: left;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.enter{
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+    vertical-align: top;
+    margin: 25px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: #FFFFFF;
+    height: 900px;
+}
+
+.enter textarea{
+    flex-basis: 70%;
+    border: none;
+    display: block;
+    resize: none;
+    font-size: 32px;
+    line-height: 48px;
+    background: transparent;
+}
+
+.enter button{
+    text-align: center;
+    font-size: 15px;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.encriptar{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.desencriptar{
+    background: #FFFFFF;
+    color: #000000;
+    border-color: #000000;
+}
+
+.resultado{
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    vertical-align: top;
+    margin: 25px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: #FFFFFF;
+}

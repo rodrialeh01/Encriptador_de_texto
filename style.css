@@ -118,3 +118,19 @@ header h1 {
 .oculto{
     display: none;
 }
+
+.creditos{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.logos{
+    width:20px;
+    height:20px;
+    margin-left: 5px;
+    margin: none;
+    padding: none;
+}

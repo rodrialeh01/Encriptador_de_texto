@@ -48,6 +48,8 @@ function Encriptar(){
 
     }else{
         alert("El texto ingresado debe ser en minusculas");
+        div_vacio.style.display = "block";
+        div_resultado.style.display = "none";
     }
 
 }
@@ -71,6 +73,8 @@ function Desencriptar(){
         texto_resultado.value = salida;
     }else{
         alert("El texto ingresado debe ser en minusculas");
+        div_vacio.style.display = "block";
+        div_resultado.style.display = "none";
     }
 }
 

@@ -11,6 +11,7 @@
         <link rel = "stylesheet" href = "./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/icon" href="./images/icons8-seguridad-50.png"/>
     </head>
 
     <body>
@@ -21,25 +22,26 @@
 
         <main>
             <section class="enter">
-                <textarea placeholder="Ingrese el texto aqui" required data-dl-input-translation="true" rows="15" cols="69"></textarea>
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <textarea placeholder="Ingrese el texto aqui" required data-dl-input-translation="true" rows="15" cols="69" id = "texto_ingresado"></textarea>
+                <button class="encriptar" type="button" onclick="Encriptar()">Encriptar</button>
+                <button class="desencriptar" type="button" onclick="Desencriptar()">Desencriptar</button>
             </section>
             <section class="resultado">
-                <div class="vacio">
+                <div id="vacio" class="vacio">
                     <img src="./images/Muñeco.png">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
-                <div class="encriptado oculto">
-                    <textarea rows="46" cols="42" readonly="readonly"></textarea>
-                    <button class="desencriptar">Copiar</button>
+                <div id="contenido" class="encriptado">
+                    <textarea rows="44" cols="25" readonly="readonly" id = "texto_resultado"></textarea>
+                    <button class="desencriptar" type="button" onclick="Copiar()">Copiar</button>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p class="creditos">&copy; 2023 Todos los derechos reservados por Rodrigo Hernández | Oracle+AluraLatam <a href="https://www.linkedin.com/in/rodrialeh01/"><img class="logos" src="./images/linkedin.png" alt="Logo Linkedin"></a><a href="https://github.com/rodrialeh01"><img class="logos" src="./images/GITHUB.png" alt="Logo Github"></a></p>
+            <p class="creditos">&copy; 2023 Todos los derechos reservados por Rodrigo Hernández | Oracle+AluraLatam <a href="https://www.linkedin.com/in/rodrialeh01/"><img class="logos" src="./images/linkedin.png" alt="Logo Linkedin"></a><a href="https://github.com/rodrialeh01"><img class="logos" src="./images/GITHUB.png" alt="Logo Github"></a><a href="https://www.instagram.com/rodri.aleh/"><img class="logos" src="./images/icons8-instagram-48.png" alt="Logo Instagram"></a></p>
         </footer>
+        <script src="./main.js"></script>
     </body>
 </html>

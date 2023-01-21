@@ -77,7 +77,10 @@ header h1 {
 }
 
 .resultado textarea{
-    border: none;
+    border-radius: 10px;
+    border-width: 2.5px;
+    border-color: #000000;
+    padding: 5%;
     display: flex;
     outline: none;
     resize: none;
@@ -87,9 +90,9 @@ header h1 {
 }
 
 .vacio img{
-    margin-top: 50%;
-    margin-bottom: 10%;
-    display: block;
+    width: 100%;
+    height: auto;
+    
 }
 
 .vacio h2{
@@ -113,6 +116,11 @@ header h1 {
 
 .vacio{
     padding-bottom: 165px;
+    padding-top: 185px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .oculto{

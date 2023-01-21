@@ -84,7 +84,7 @@ header h1 {
     display: flex;
     outline: none;
     resize: none;
-    line-height: 15.1px;
+    line-height: 18px;
     font-size: 20px;
     background: transparent;
 }
@@ -92,7 +92,6 @@ header h1 {
 .vacio img{
     width: 100%;
     height: auto;
-    
 }
 
 .vacio h2{

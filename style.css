@@ -34,13 +34,20 @@ header h1 {
     background: transparent;
 }
 
+.enter p{
+    display: flex;
+    font-size: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
 .enter button{
     text-align: center;
     font-size: 25px;
     width: 25%;
     height: 55px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .encriptar{

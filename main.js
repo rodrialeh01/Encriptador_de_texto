@@ -18,9 +18,14 @@ function Encriptar(){
 
         //Declaramos la variable de salida
         let salida = "";
-
+        let bandera = false;
         //Recorremos el texto ingresado
         for(let i = 0; i < texto.length; i++){
+            if(texto[i] == "á" || texto[i] == "é" || texto[i] == "í" || texto[i] == "ó" || texto[i] == "ú"){
+                salida= "";
+                bandera = true;
+                break;
+            }
             switch(texto[i]){
                 case "a":
                     salida+= "ai";
@@ -42,9 +47,14 @@ function Encriptar(){
                     break;
             }
         }
-        console.log(salida);
         //Mostramos el resultado
-        texto_resultado.value = salida;
+        if(bandera){
+            alert("El texto ingresado no debe contener acentos");
+            div_vacio.style.display = "block";
+            div_resultado.style.display = "none";
+        }else{
+            texto_resultado.value = salida;
+        }
 
     }else{
         alert("El texto ingresado debe ser en minusculas");

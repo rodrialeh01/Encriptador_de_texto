@@ -39,6 +39,7 @@ header h1 {
     font-size: 15px;
     text-align: left;
     vertical-align: top;
+    font-weight: bold;
 }
 
 .enter button{
